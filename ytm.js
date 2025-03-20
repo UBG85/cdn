@@ -1,7 +1,7 @@
 document.getElementById('downloadForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const url = document.getElementById('url').value;
-    fetch('/download', {
+    fetch('/ytm/download', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
